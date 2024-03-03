@@ -60,7 +60,7 @@ Dino senpai yang baik hati memberikan deadline 7 hari sejak tugas ini dipublish 
 
 - Buatlah video berisi penjelasan mengenai program yang kamu buat lalu upload ke youtube dan batasi videonya hanya yang memiliki link yang dapat melihat
 - Maksimal durasi video adalah 20 menit
-- Fork Repository ini dan beri nama forked repositorynya dengan format ```Nama - PBO PTI-A```
+- Fork Repository ini dan beri nama forked repositorynya dengan format ```Nama Panggilan-PBO-PTI-A```
 - Bikin folder baru dalam folder Tugas 1 dan beri nama folder tersebut ```NIM - Nama Panggilan```
 - Upload hasil tugas kamu beserta dengan file README.md yang memiliki isi dengan [template yang sudah ditentukan](./22xxx%20-%20Devan/README.md) ke dalam folder yang telah kamu baru buat
 - Setelah submisi kamu sudah terupload, kumpulkan link repository milik kamu (yang di fork) ke classroom
