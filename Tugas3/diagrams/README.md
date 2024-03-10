@@ -1,15 +1,16 @@
 # 📁 Tugas 3 : Class Diagram
 
 ## 👤 Identitas Intern
-Nama : Devan             
-NIM  : 22xxxxxx
+Nama : Amaliyah Syahidatun Ni'mah        
+NIM  : 235150601111004
 
 ## 📤 Submission
 
-Tema yang dipilih : 
+Tema yang dipilih : Kendaraan
 Class Diagram yang dibuat : 
-1. Class Diagram 1
-2. Class Diagram 2
+1. Class Kereta
+2. Class Mobil
+3. Class Pesawat
 dst
 
 ## 🔗 Link Penjelasan Tugas
