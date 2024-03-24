@@ -1,4 +1,4 @@
-package source.pertemuan4.studkas2;
+
 
 public class MataKuliah {
     public String kodeMataKuliah;

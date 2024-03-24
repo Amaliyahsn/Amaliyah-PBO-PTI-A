@@ -1,4 +1,3 @@
-package source.pertemuan4.studkas2;
 
 public class Mahasiswa {
     public String nama;

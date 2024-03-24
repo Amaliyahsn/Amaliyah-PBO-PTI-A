@@ -4,6 +4,14 @@ public class Hero {
     public int hp;
     public int atk;
 
+    // public String getNama() {
+    //     return nama;
+    // }
+
+    // public int getHp(){
+    //     return this.hp;
+    // }
+
     public Hero() {
         nama = "Yanto kun";
         hp = 100;

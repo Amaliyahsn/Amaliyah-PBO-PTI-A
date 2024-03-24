@@ -20,7 +20,7 @@ public class KenMobil {
     private String jenisBahanBakar; 
     private boolean mesinNyala; // Atribut untuk menunjukkan status mesin mobil (nyala atau tidak)
 
-    // meth0d untuk membuat objek KenMobil dengan parameter jenis mobil, nomor plat, warna, dan jenis bahan bakar
+    //Konstruktor untuk membuat objek KenMobil dengan parameter jenis mobil, nomor plat, warna, dan jenis bahan bakar
     public KenMobil(String jenisMobil, String nomorPlat, String warna, String jenisBahanBakar) {
         this.jenisMobil = jenisMobil;
         this.nomorPlat = nomorPlat;

@@ -1,0 +1,143 @@
+Data dan Analisis hasil percobaan
+A.	Constructor
+Pertanyaan
+1.	Lakukan percobaan constructor diatas dan benahi jika menemukan kesalahan!
+Jawab: 
+1.	Pada baris 21 di Class MianStudent anna = new student("anna", "Batu", 18);dan di Class Student baris 10, kesalahan pada 
+penulisan kata student yang S dengan huruf kecil. Seharusnya, kata student harus diawali dengan huruf besar, yaitu Student
+
+2.	Tambahkan constructor pada class Student dengan parameter yang mempunyai parameter masing masing nilai dari mata pelajaran yang ada! Kemudian buat contoh objeknya pada main Class!
+Jawab :
+
+public Student(String n, String a, int ag, double math, double english, double science){ 
+        name = n;
+        address = a; 
+        age = ag;
+        mathGrade = math;
+        englishGrade = english;
+        scienceGrade = science;
+
+
+3.	Tambahkan method dengan nilai balikan berupa boolean pada class student bernama statusAkhir untuk menentukan apakah siswa tersebut remidi atau tidak.
+Ketentuannya adalah jika nilai lebih dari atau sama dengan 61 adalah lolos sedangkan nilai kurang dari atau sama dengan 60 adakah remidi. Nilai yang di cari adalah nilai rata rata untuk semua mapel. Kemudian nilai pada method statusAkhir tampilkan pada method displayMessage!
+Jawab : 
+
+ // Method untuk menentukan status akhir siswa (remidi atau tidak)
+    public boolean statusAkhir() {
+        double avg = getAverage();
+        return avg >= 61; // Jika rata-rata >= 61, mengembalikan true (lolos), jika tidak, false (remidi)
+    }
+    public void displayMessage(){
+        System.out.println("Siswa dengan nama " + name);
+        System.out.println("beralamat di "+ address);
+        System.out.println("berumur "+ age);
+        System.out.println("mempunyai nilai rata rata "+getAverage());
+        System.out.println("Status akhir: " + (statusAkhir() ? "Lolos" : "Remidi"));
+    }
+
+4.	Bagaimana cara memasukkan jumlah siswa sesuai dengan keinginan user? Tuliskan kodenya dengan inputan user yang interaktif! (key : menggunakan array)
+	Jawab :
+
+public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukan Jumlah Siswa :");
+        int jmlhSiswa = input.nextInt();
+
+        System.out.println("============================");
+        Student [] siswa = new Student[jmlhSiswa];
+        for (int i = 0; i < jmlhSiswa; i++){
+            siswa[i] = new Student();
+
+            System.out.print("Masukan Nama Siswa :");
+            siswa[i].setName(input.next());
+            System.out.print("Masukan Kota Siswa :");
+            siswa[i].setAddress(input.next());
+            System.out.print("Masukan Umur Siswa :");
+            siswa[i].setAge(input.nextInt());
+            System.out.print("Masukan Niai Matematika Siswa :");
+            siswa[i].setMath(input.nextInt());
+            System.out.print("Masukan Niai Bahasa inggris Siswa  :");
+            siswa[i].setEnglish(input.nextInt());
+            System.out.print("Masukan Niai IPA Siswa  :");
+            siswa[i].setScience(input.nextInt());
+        }
+        System.out.println("\nInformasi Siswa:");
+        for (int i = 0; i < jmlhSiswa; i++) {
+            System.out.println("\nData Siswa ke-" + (i + 1));
+        siswa[i].displayMessage();
+   
+    }
+ 
+
+5.	Bagaimana cara menghitung banyaknya objek yang kita buat dari sebuah menginstance objek dari mein class? Tuliskan kodenya kemudian tampilkan informasinya dengan memanggil method jumlahObjek() bertipe void!
+Jawab :
+Membuat objek dulu di Class student
+private static int jumlahObjek = 0;
+
+ public static void jumlahObjek() {
+        System.out.println("Jumlah objek Student yang telah dibuat: " + jumlahObjek);
+    }
+
+    // Metode getter untuk mendapatkan jumlah objek
+    public static int getJumlahObjek() {
+        return jumlahObjek;
+    }
+
+
+Method dipanggil di kelas main
+// Menampilkan jumlah objek yang dibuat dari kelas Student
+    System.out.println("\nJumlah objek Student yang dibuat: " + Student.getJumlahObjek());
+ }
+
+//nanti akan mengeluarkan oupt dengan menghitung berapa banyak objek yang di buat 
+
+B.	Instance Method
+Pertanyaan
+1.	Lakukan percobaan Instance Method diatas dan benahi jika menemukan kesalahan!
+Jawab:  belum menambahkan   public boolean isRational() { yang dimana ini membuat semua tipedatanya jadi merah
+ 
+2.	Tambahkan method untuk operator <, <=, >= !
+Jawab: 
+// Operator <
+    public boolean lessThan(Rasional A) {
+        return (pembilang * A.penyebut < penyebut * A.pembilang);
+    }
+    // Operator >=
+    public boolean moreThanOrEqual(Rasional A) {
+        return (pembilang * A.penyebut >= penyebut * A.pembilang);
+    }
+    // Operator <=
+    public boolean lessThanOrEqual(Rasional A) {
+        return (pembilang * A.penyebut <= penyebut * A.pembilang);
+    }
+ 
+
+3.	Ubah method sederhana pada baris 25 – 30 yang awalnya adalah menggunakan while menjadi for!
+Jawab : 
+
+for (; B != 0; ) {
+        temp = A % B;
+        A = B;
+        B = temp;
+    }
+
+4.	Tambahkan method untuk operasi -, * , / !
+Jawab:
+
+ // Operator pengurangan (-)
+      public void kurang(Rasional A) {
+        pembilang = pembilang *A.penyebut - penyebut * A.pembilang;
+        penyebut *= A.penyebut;
+    }
+    // Operator perkalian (*)
+    public void kali(Rasional A) {
+        pembilang = pembilang *A.penyebut * penyebut * A.pembilang;
+        penyebut *= A.penyebut;
+    }
+    // Operator pembagian (/)
+    public void bagi(Rasional A) {
+        pembilang = pembilang *A.penyebut / penyebut * A.pembilang;
+        penyebut *= A.penyebut;
+    }
+  
+

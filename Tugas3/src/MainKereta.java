@@ -22,7 +22,7 @@ class Kereta {
     private double kecepatan; 
     private String status; 
 
-    //Metode untuk membuat objek Kereta dengan parameter-parameter yang diberikan
+    //Konstruktor untuk membuat objek Kereta dengan parameter-parameter yang diberikan
     public Kereta(String nomorKereta, String jenisKereta, int jumlahGerbong, int jumlahPenumpang, double kecepatan, String status) {
         this.nomorKereta = nomorKereta;
         this.jenisKereta = jenisKereta;
@@ -30,6 +30,14 @@ class Kereta {
         this.jumlahPenumpang = jumlahPenumpang;
         this.kecepatan = kecepatan;
         this.status = status;
+    }
+
+    public Kereta(String string, String string2, int i) {
+        //TODO Auto-generated constructor stub
+    }
+
+    public Kereta(String string, String string2) {
+        //TODO Auto-generated constructor stub
     }
 
     // Metode untuk mengatur kecepatan kereta
@@ -73,6 +81,21 @@ class Kereta {
         System.out.println("Jumlah Penumpang: " + jumlahPenumpang);
         System.out.println("Kecepatan: " + kecepatan);
         System.out.println("Status: " + status);
+    }
+
+    public String getNomorKereta() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getNomorKereta'");
+    }
+
+    public void tambahPenumpang(int i, boolean b) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'tambahPenumpang'");
+    }
+
+    public static void printInfo() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'printInfo'");
     }
 }
 

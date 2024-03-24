@@ -1,0 +1,55 @@
+Data dan Analisis hasil percobaan
+A.	Overloading Method
+Pertanyaan
+1.	Lakukan percobaan diatas dan benahi jika menemukan kesalahan!
+Jawab : Amannnn, tidak terjadi eror
+
+2.	Jika pada baris 7, pada parameter double value dan double value2 di hapus dan di ganti menjadi int a dan int b apa yang terjadi? Jelaskan!
+jawab: terjadi eror, karena jumlah dan tipe parameter pada line 7 sama dengan jumlah dan tipe paramater yang ada pada line 3 dengan nama method yang sama.
+Jadi, ketika ingin membuat method overloading, jumlah dan tipe parameternya harus berbeda satu dengan yang lain.
+
+3.	Rubah method pada baris ketujuh menjadi method bertipe void, dan lakukan juga perubahan main method.
+jawab :
+sebelum dirubah
+    
+    // public static double HitungLuas(double value, double value2){
+        double nilai = value* value2;
+        return nilai;
+    }
+
+sesudah dirubah
+    public static void HitungLuas(double value, double value2) {
+        double nilai = value * value2;
+        System.out.println("Maka hasil luas : " + nilai);
+    }
+
+B.	Overloading Constructor
+Pertanyaan
+1.	Lakukan percobaan diatas dan benahi jika menemukan kesalahan!
+Jawab :Amannnn, tidak ditemukan kesalahan
+
+2.	Pada class lingkaran Tambahkan constructor dengan parameter int tinggi, apa yang terjadi dan jelaskan!
+Jawab:
+Setelah saya coba ternyata terjadi kesalahan karena pada construtor tersebut, jumlah dan tipe data pada parameter sama dengan seperti di line 3
+
+3.	Pada class lingkaran tambahkan constrctor dengan tipe data String alas dan String tinggi, 
+kemudian tambahkan method untuk melakukan parsing atau perubahan tipe data dari String menjadi integer. 
+Setelah itu pada method main lakukan instansiasi objek dengan nama objek Lstring dengan memanggil constructor bertipe data String. Jelaskan!
+Jawab: 
+Dibawah ini adalah kode yang saya buat seperti perintah dimana menambahkan constrctor di class lingkaran bertipe data  String
+alas dan String tinggi, dibawah itu membuat method sesuai perintah soal yang dimana method tersebut melakukan parsing atau perubahan tipe data dari String menjadi integer.
+Setelah itu membuat objek di class main dengan nama Lstring dan memanggil constrctor yang tadi bertipe data String 
+Yang ditambahkan :
+    public lingkaran(String a, String t) {
+        String alas = a;
+        String tinggi = t;
+        parsing(alas,tinggi);
+    }
+    public void parsing(String a, String t) {
+        alas = Integer.parseInt(a);
+        tinggi = Integer.parseInt(t);
+    }
+// dipanggil di class main
+    lingkaran Lstring = new lingkaran("5","10");
+    Lstring.displayMessage();	
+   
