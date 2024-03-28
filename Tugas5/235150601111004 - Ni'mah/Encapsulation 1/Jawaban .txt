@@ -1,0 +1,61 @@
+A.	Encapsulation 1
+Pertanyaan
+1.	Lakukan percobaan diatas dan benahi jika menemukan kesalahan!
+Jawab : 
+
+- Setelah Saya menyalin kode yang sudah ada ternyata di Class Test ada beberapa yang mengalami Eror
+dimana di kode ini yang aslinya s1.setMark("90"); yang artinya itu menyimpan nilai string padahal atribut mark itu menyimpan nilai jadi 
+yang benar itu s1.setMark(90);
+- di kode ini yang aslinya  
+// System.out.println("s1Name is "+s1.setName());
+// System.out.println("s1Mark is "+s1.setMark()); 
+nah di bagian s1.setName() dan s1.setMark terjadi eror karena dia itu aslinya sebagai accessor mangkanya dirubah menjadi 
+// System.out.println("s1Name is "+s1.getName());
+// System.out.println("s1Mark is "+s1.getMark()); 
+- dikode System.out.println("name dan mark "+name+" "+mark); dibagian name sama mark eror karena di Class student itu bersifat private maka dari itu kita panggil dengan Method yang sudah dibuat yaitu
+// System.out.println("name dan mark "+s1.getName()+" "+s1.getMark());
+
+2.	Jika pada baris 6 s1.setName diubah menjadi s1.getName apa yang terjadi? jelaskan!
+Jawab : tadi di soal nomer satu di baris tersebut jika saat s1.setName itu eror terus diganti menggunkan s1.getName
+maka akan tidak eror dan anntinya outpunya akan menampilkan nama yang disimpan dari objek 1
+
+3.	Setelah diperbaiki, ubahlah hak akses pada baris 4 (pada class Student) menjadi private
+apa yang terjadi jika class Test dijalankan? Jelaskan!
+Jawab : Setelah saya ganti menjadi private ternyat saat menjalakan di class test di s1.setname terjadi eror
+itu dikarenakan mengubah metode setName(String n) menjadi private, maka akses ke metode tersebut akan dibatasi hanya di dalam kelas Student saja. Ini berarti bahwa di dalam kelas Test, tidak akan dapat langsung memanggil metode setName() untuk mengatur nilai name dalam objek s1.
+
+4.	Jika kedua kelas diatas terdapat dalam package yang sama apakah konsep enkapsulasi tetap berfungsi? jelaskan!
+Jawab : masih berfungsi meskipun berada di package yang sama, atribut dan metode yang diberi memiliki akses private yang hanya dapat diakses oleh kelas itu sendiri. Ini mempertahankan prinsip enkapsulasi dengan membatasi akses langsung ke detail internal objek.
+
+B.	Encapsulation 2
+Pertanyaan
+1.	Method apakah yang menjadi accessor (getter) ?
+Jawab :
+
+2.	Tambahkan source code berikut dibawah baris ke 6 pada class TestVehicle1. System.out.println("Add load(100kg) : " + (vehicle.load=500));
+Jalankan program, apakah output dari program tersebut? Kembalikan program seperti semula.
+Jawab :
+
+
+3.	Ubahlah tipe data pada atribut load dan maxload pada class Vehicle1 menjadi public. Jalankan program, apakah output dari program tersebut?
+a.	Tambahkan source kode berikut dibawah baris ke 6 pada class TestVehicle1. System.out.println("Add load(100kg) : " + (vehicle.load=500));
+Jalankan program, apakah output dari program tersebut? Kembalikan program seperti semula.
+b.	Tambahkan source kode berikut dibawah baris ke 12 pada class TestVehicle1. System.out.println("Add load(100kg) : " + (vehicle.load=500));
+Jalankan program, apakah output dari program tersebut? Kembalikan program seperti semula.
+Jawab : Setelah saya ganti atributnya menjadi public keuar output
+Creating a vehicle with a 10,000 kg maximumload.
+Add box #1 (500kg) : true
+Add box #2 (250kg) : true 
+Add box #3 (5000kg) : true
+Add box #4 (4000kg) : true
+Add box #5 (300kg) : false
+Vehicle load is 9750.0kg
+a. outputnya Add load(100kg) : 500.0  
+b. outputnya Add load(100kg) : 500.0
+
+4.	Ulangi instruksi pada nomer 4 dengan mengubah tipe data pada atribut load dan maxload pada class Vehicle1 menjadi protected.
+Jawab :protected, maka atribut tersebut akan dapat diakses oleh kelas yang berada dalam paket yang sama serta oleh subkelas (kelas turunan) di mana pun.
+outputnya Add load(100kg) : 500.0
+5.	Ulangi instruksi pada nomer 4 dengan mengubah tipe data pada atribut load dan maxload pada class Vehicle1 menjadi default.
+Jawab :menjadi default (tidak ada modifier akses yang ditentukan), maka atribut tersebut akan dapat diakses oleh kelas yang berada dalam paket yang sama, tetapi tidak akan dapat diakses oleh kelas di paket lain.
+outputnya Add load(100kg) : 500.0
