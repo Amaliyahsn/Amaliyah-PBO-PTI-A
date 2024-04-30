@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "source/pertemuan4/studkas2",
+        "Tugas5/235150601111004 - Ni'mah/Encapsulation 1",
         "Tugas4/235150601111004-Ni'mah/Modul 1 bab 3",
         "Tugas4/235150601111004-Ni'mah/Modul 1 bab 2/Instance Method",
         "Tugas4/235150601111004-Ni'mah/Modul 1 bab 2/Constructor",
@@ -9,6 +10,6 @@
         "Tugas2/235150601111004-Ni'mah/Tugas Praktikum",
         "Tugas2/235150601111004-Ni'mah/Analisis Percobaan",
         "Tugas2/22xxx - Devan/Tugas Praktikum",
-        "Tugas5/235150601111004 - Ni'mah/Encapsulation 1"
+        "Tugas6/src/Praktikum"
     ]
 }
